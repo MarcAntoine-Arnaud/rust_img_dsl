@@ -5,6 +5,9 @@ rust:
 - beta
 - stable
 
+env:
+  - LLVM_VERSION=3.9 CLANG_VERSION=clang_3_9
+
 before_install:
   -
     if [ "${TRAVIS_OS_NAME}" = "linux" ]; then
